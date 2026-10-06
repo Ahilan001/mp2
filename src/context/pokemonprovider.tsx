@@ -12,8 +12,6 @@ export function PokemonProvider({children}: {children: ReactNode}){
 
     useEffect(() => {
         let cancelled = false
-        setLoading(true)
-        setError(null)
 
         fetchAllPokemonDetails(POKE_LIMIT).then((data) => {
             if (!cancelled)
@@ -29,7 +27,10 @@ export function PokemonProvider({children}: {children: ReactNode}){
             cancelled = true
         }
     }, [attempt]);
-    const reload = useCallback(() => setAttempt((a) => a+1), [])
+    const reload = useCallback(() => {
+        setLoading(true)
+        setError(null)
+        setAttempt((a) => a+1)}, [])
 
     return(
         <PokemonContext.Provider value={{pokemon, loading, error, reload}}>
