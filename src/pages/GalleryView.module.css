@@ -1,0 +1,84 @@
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 24px;
+}
+
+.grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid beige;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    background: beige;
+}
+
+.image, .placeholder {
+    width: 120px;
+    height: 120px;
+}
+
+.image {
+    object-fit: contain;
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+.name {
+    margin-top: 8px;
+    text-transform: capitalize;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.chip {
+    padding: 6px 6px;
+    font-size: 0.9rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.chip:hover {
+    background-color: beige;
+}
+
+.activeChip{
+    background-color: beige;
+}
+
+.activeChip:hover{
+    background-color: black;
+    color: white;
+}
+
+.count{
+    color: gray;
+    margin: 0 0 16px;
+}

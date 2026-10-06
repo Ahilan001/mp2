@@ -1,0 +1,88 @@
+.container{
+    max-width: 600px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.title,.capitalize{
+    text-transform: capitalize;
+}
+
+.image,.placeholder{
+    width: 240px;
+    height: 240px;
+}
+
+.image{
+    object-fit: contain;
+}
+
+.placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: gray;
+}
+
+.facts{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 8px 24px;
+    max-width: 400px;
+    margin: 24px auto;
+    text-align: left;
+}
+
+.facts dt{
+    font-weight: bold;
+}
+
+.facts dd{
+    margin: 0;
+}
+
+.stats{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 400px;
+}
+
+.stat{
+    display: grid;
+    grid-template-columns: 130px 40px 1fr;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.statValue{
+    text-align: right;
+}
+
+.pager {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto;
+    max-width: 400px;
+}
+
+.pagerButton{
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.pagerButton:hover:enabled {
+    background-color: beige;
+}
+
+.pagerButton:disabled{
+    color: gray;
+    border-color: lightgray;
+}

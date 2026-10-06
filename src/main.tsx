@@ -4,11 +4,14 @@ import { BrowserRouter } from "react-router-dom";
 import 'normalize.css'
 import './index.css'
 import App from './App.tsx'
+import {PokemonProvider} from "./context/pokemonprovider.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <App />
+      <PokemonProvider>
+          <App />
+      </PokemonProvider>
     </BrowserRouter>
   </StrictMode>,
 )

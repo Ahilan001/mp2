@@ -1,0 +1,75 @@
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 24px;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    gap: 16px;
+    padding: 10px 12px;
+    border-bottom: 1px solid beige;
+    text-decoration: none;
+    color: black;
+}
+
+.item:hover {
+    background: beige;
+}
+
+.id {
+    width: 48px;
+    color: gray;
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.types {
+    text-transform: capitalize;
+    margin-left: auto;
+}
+
+.search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.control {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: beige;
+}
+
+.activeButton {
+    background-color: beige;
+    font-weight: bold;
+}
